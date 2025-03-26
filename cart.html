@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Muscle Meals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <i class="fas fa-dumbbell"></i> Muscle Meals
+    </div>
+    <div class="icons">
+      <div id="cart-btn">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count">0</span>
+      </div>
+    </div>
+  </header>
+
+  <section class="cart-section">
+    <h1 class="heading">Your <span>Cart</span></h1>
+    
+    <div class="cart-container">
+      <div class="cart-actions">
+        <button id="clear-cart" class="btn btn-secondary">
+          <i class="fas fa-trash"></i> Clear Cart
+        </button>
+        <button id="continue-shopping" class="btn btn-secondary">
+          <i class="fas fa-arrow-left"></i> Continue Shopping
+        </button>
+      </div>
+      
+      <div class="table-container">
+        <table id="cart-items">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body">
+            <!-- Cart items will appear here -->
+          </tbody>
+          <tfoot>
+            <tr class="summary-row">
+              <td colspan="2"></td>
+              <td class="total-label">Subtotal:</td>
+              <td id="subtotal" class="total-amount">₹0</td>
+              <td></td>
+            </tr>
+            <tr class="summary-row">
+              <td colspan="2"></td>
+              <td class="total-label">Delivery:</td>
+              <td id="delivery" class="total-amount">₹50</td>
+              <td></td>
+            </tr>
+            <tr class="summary-row grand-total">
+              <td colspan="2"></td>
+              <td class="total-label">Grand Total:</td>
+              <td id="grand-total" class="total-amount">₹50</td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      
+      <div class="checkout-section">
+        <button id="checkout-btn" class="btn btn-primary">
+          <i class="fas fa-lock"></i> Proceed to Secure Checkout
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
